@@ -5,7 +5,7 @@ let secondInputContent = document.getElementById("second-number");
 let outputContent = document.getElementById("output");
 
 function addition() {
-    let soln = (Number(firstInputContent.value) + Number(secondInputContent.value));  // Number() function from slide 7 in 9/17 lec notes
+    let soln = (Number(firstInputContent.value) + Number(secondInputContent.value));  // Number() function from slide 7 in 9/17 lec notes -- .value comes from in-lecture demo on 9/17
     outputContent.innerHTML = soln;
     if (soln >= 0) {
         outputContent.style.color = "black";
