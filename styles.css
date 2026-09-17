@@ -4,7 +4,7 @@
 }
 
 #page-wrapper{
-    background-color: pink;
+    background-color: #FFEDFA;  /*https://colorhunt.co/palette/ffedfaffb8e0ec7fa9be5985*/
     width: 80%;
     margin: 0 auto;
 }
@@ -17,12 +17,12 @@
 }
 
 header, footer{
-    background-color: green;
+    background-color: #EC7FA9;  /*https://colorhunt.co/palette/ffedfaffb8e0ec7fa9be5985*/
 }
 
 nav{
     width: 30%;
-    background-color: blue;
+    background-color: #FFB8E0;  /*https://colorhunt.co/palette/ffedfaffb8e0ec7fa9be5985*/
 }
 
 nav ul{
@@ -33,13 +33,13 @@ nav ul{
 }
 
 nav li{
-    border: solid black 2px;
+    border: solid #e03a79 2px;
     text-align: center;
     margin: 10%;
 }
 
 nav a{
-    color: white;
+    color: #EC7FA9;
     text-decoration: none;
     font-size: calc(2px + 2vw);
 }
@@ -82,9 +82,6 @@ img{
     }
 
     #container{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
         height: 100vh;   /*play w/ this number*/
     }
 }
