@@ -227,6 +227,10 @@ img{
         height: 110vh;
     }
 
+    .work-page #container{
+        height: 140vh;
+    }
+
     .horizontal-page-intro{
         flex-direction: column;
         gap: 3%;
