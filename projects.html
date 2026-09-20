@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="styles.css">
         <title>Document</title>
     </head>
-    <body>
+    <body class="projects-page">
         <div id="page-wrapper">
             <header>
                 <h1>Sydney Stokes</h1>
@@ -37,29 +37,35 @@
                 </nav>
 
                 <main>
-                    <img src="img/hack_harvard.jpg" alt="Sydney Stokes posing after winning HackHarvard 2024.">
-                    <img src="img/boston_dynamics.jpg" alt="Boston Dynamics 'Spot', an agile four-legged mobile robot.">
-                    <p>
-                        One project that I'm extremely proud of came from my participation in HackHarvard 2024 as a Junior in college.
-                        While at HackHarvard, I worked as a solo team and ultimately won first place in the ‘Patient Safety Challenge’
-                        track with a sign language translator that analyzes user hand gestures and displays them as text on-screen.
-                        I did this by creating and training a machine learning model to recognize American Sign Language (ASL) letters
-                        using the Sign Language MNIST dataset in Python and PyTorch. You can check out my project, SimplySign, here:
-                        <a href="https://lnkd.in/gZ3VrgDV">https://lnkd.in/gZ3VrgDV</a>.
-                    </p>
+                    <h3>Technical Projects</h3>
+                    <div class="vertical-page-intro">
+                        <img class="hack-harvard-img" src="img/hack_harvard.jpg" alt="Sydney Stokes posing after winning HackHarvard 2024.">
+                        <p>
+                            One project that I'm extremely proud of came from my participation in HackHarvard 2024 as a Junior in college.
+                            While at HackHarvard, I worked as a solo team and ultimately won first place in the ‘Patient Safety Challenge’
+                            track with a sign language translator that analyzes user hand gestures and displays them as text on-screen.
+                            I did this by creating and training a machine learning model to recognize American Sign Language (ASL) letters
+                            using the Sign Language MNIST dataset in Python and PyTorch. You can check out my project, SimplySign, here:
+                            <a href="https://lnkd.in/gZ3VrgDV">https://lnkd.in/gZ3VrgDV</a>.
+                        </p>
+                        <br>
+                        <img class="hack-harvard-img" src="img/simply_sign.jpg" alt="Sydney Stokes demonstrating successful detection of the letter 'C' in ASL by SimplySign.">
+                    </div>
 
-                    <!--form?-->
-                    <h1 id="calculator">JS Calculator!</h1>
+                    <br><br>
+                    <h3 id="calculator">JS Calculator!</h3>
                     <div id="calc">
+                        <div id="calc-output"></div>
                         <input type="text" id="first-number">
                         <input type="text" id="second-number">
-                        <button onclick="addition()"> + </button>
-                        <button onclick="subtraction()"> - </button>
-                        <button onclick="multiplication()"> * </button>
-                        <button onclick="division()"> / </button>
-                        <button onclick="power()"> ** </button>
-                        <button onclick="clearOutput()"> Clear </button>
-                        <h3 id="output"></h3>
+                        <div class="calc-buttons">
+                            <button onclick="addition()">+</button>
+                            <button onclick="subtraction()">-</button>
+                            <button onclick="multiplication()">*</button>
+                            <button onclick="division()">/</button>
+                            <button onclick="power()">**</button>
+                            <button onclick="clearOutput()">Clear</button>
+                        </div>
                     </div>
                 </main>
             </div>

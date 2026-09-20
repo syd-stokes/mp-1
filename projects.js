@@ -1,6 +1,6 @@
 let firstInputContent = document.getElementById("first-number");
 let secondInputContent = document.getElementById("second-number");
-let outputContent = document.getElementById("output");
+let outputContent = document.getElementById("calc-output");
 
 function addition() {
     let soln = (Number(firstInputContent.value) + Number(secondInputContent.value));  // Number() function from slides 7 & 34 in 9/17 lec notes -- .value comes from slide 34 & in-lecture demo on 9/17

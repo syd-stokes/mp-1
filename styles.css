@@ -4,7 +4,7 @@
 }
 
 #page-wrapper{
-    background-color: #FFEDFA;  /*https://colorhunt.co/palette/ffedfaffb8e0ec7fa9be5985*/
+    background-color: #EFE6DA;
     width: 80%;
     margin: 0 auto;
 }
@@ -18,11 +18,28 @@
 
 header, footer{
     background-color: #EC7FA9;  /*https://colorhunt.co/palette/ffedfaffb8e0ec7fa9be5985*/
+    color: #F7F1E8;
+}
+
+h3{
+    color: #EC7FA9;  /*https://colorhunt.co/palette/ffedfaffb8e0ec7fa9be5985*/
+    padding-top: 1%;
+    padding-bottom: 4%;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2{
+    color: #EC7FA9;  /*https://colorhunt.co/palette/ffedfaffb8e0ec7fa9be5985*/
+    padding-top: 2%;
+    padding-bottom: 4%;
+    text-align: left;
+    font-size: calc(2px + 1.9vw);
 }
 
 nav{
     width: 30%;
-    background-color: #FFB8E0;  /*https://colorhunt.co/palette/ffedfaffb8e0ec7fa9be5985*/
+    background-color: #F7F1E8;
 }
 
 nav ul{
@@ -33,26 +50,135 @@ nav ul{
 }
 
 nav li{
-    border: solid #e03a79 2px;
+    border: solid #EC7FA9 2px;
+    background-color: #e7d4bb;
     text-align: center;
-    margin: 10%;
+    margin: 8% 13%;
+    padding: 5% 0.25%;
 }
 
 nav a{
-    color: #EC7FA9;
+    color: #593714;
     text-decoration: none;
-    font-size: calc(2px + 2vw);
+    font-size: calc(2px + 1.8vw);
+}
+
+nav a:hover{
+    color: #D96A97;
+}
+
+.horizontal-page-intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8%;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.vertical-page-intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+.vertical-page-intro img{
+    margin-bottom: 3%;
 }
 
 main{
     width: 70%;
     font-size: calc(2px + 1.5vw);
-    text-align: center;
-    padding: 1%;
+    text-align: left;
+    padding: 2%;
+    color: #593714;
+}
+
+main a{
+    color: #593714;
+    font-style: italic;
+    font-weight: bold;
+}
+
+main a:hover{
+    color: #D96A97;
+}
+
+.research-paper{
+    border-left: solid #D96A97 3px;
+    padding-left: 3%;
+    margin-left: 3%;
+    font-style: italic;
 }
 
 img{
-    max-width: 80%;
+    max-width: 50%;
+}
+
+#gwc-logo {
+    max-width: 40%;
+}
+
+#astro-raiders-img {
+    max-width: 90%;
+}
+
+.hack-harvard-img {
+    max-width: 60%;
+}
+
+#cossmo-img{
+    display: block;
+    margin: 5% auto;
+    max-width: 90%;
+}
+
+#calc{
+    max-width: 30%;
+    margin: 0 auto;
+    background-color: #EC7FA9;
+    padding: 2%;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 0 20px 2px grey;
+}
+
+#calc-output{
+    background-color: #c8d4b8;
+    color: #593714;
+    font-size: 26px;
+    text-align: right;
+    padding: 14px 16px;
+    border-radius: 8px;
+    min-height: 58px;
+}
+
+#calc input{
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+}
+
+.calc-buttons{
+    text-align: center;
+}
+
+.calc-buttons button{
+    margin: 5px 0;
+    padding: 16px 0;
+    width: 30%;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #F7F1E8;
+    color: #593714;
+}
+
+.calc-buttons button:hover{
+    background-color: #e7d4bb;
 }
 
 @media screen and (max-width: 900px){
@@ -70,18 +196,43 @@ img{
     }
 
     nav li{
-        margin: 3%;
+        margin: 1%;
+        padding: 12px 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     main{
         width: 100%;
     }
 
-    main *{
-        margin: 10%;
+    #container{
+        height: 170vh;   /*play w/ this number*/
     }
 
-    #container{
-        height: 100vh;   /*play w/ this number*/
+    .home-page #container{
+        height: 120vh;
+    }
+
+    .education-page #container{
+        height: 120vh;
+    }
+
+    .papers-page #container{
+        height: 120vh;
+    }
+
+    .activities-page #container{
+        height: 110vh;
+    }
+
+    .horizontal-page-intro{
+        flex-direction: column;
+        gap: 3%;
+    }
+
+    #calc{
+        max-width: 35%;
     }
 }
